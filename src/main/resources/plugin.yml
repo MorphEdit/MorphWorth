@@ -1,0 +1,16 @@
+name: MorphWorth
+main: net.morphserver.worth.MorphWorthPlugin
+version: 1.0.0
+api-version: '1.21'
+author: Morph
+description: Show item worth in item lore
+
+commands:
+  worthlore:
+    description: Reload MorphWorth config
+    usage: /worthlore reload
+    permission: morphworth.reload
+
+permissions:
+  morphworth.reload:
+    default: op

@@ -1,0 +1,7 @@
+update-interval-ticks: 40
+
+lore-format: "&8Worth: &a$%price%"
+
+round-decimals: 2
+
+lore-prefix: "&8Worth:"
