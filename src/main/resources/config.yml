@@ -1,3 +1,21 @@
+# MorphWorth - main configuration
+#
+# update-interval-ticks:
+#   How often the plugin refreshes item lore.
+#   20 ticks = 1 second. Example: 40 = 2 seconds.
+#
+# lore-format:
+#   The final line that will be added to the item's lore.
+#   %price% will be replaced with the formatted worth value.
+#
+# round-decimals:
+#   How many decimal places to show for the price.
+#   0 = no decimals (integer only).
+#
+# lore-prefix:
+#   Optional prefix to identify the worth line in the lore.
+#   Used internally to detect and replace existing worth lines.
+
 update-interval-ticks: 40
 
 lore-format: "&8Worth: &a$%price%"

@@ -1,3 +1,20 @@
+# MorphWorth - worth configuration
+#
+# Path: plugins/MorphWorth/worth.yml
+#
+# All keys under "worth:" MUST be valid Bukkit Material names in UPPER_CASE.
+# You can find the full Material list here:
+#   https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
+# or search for: "Spigot Material list".
+#
+# Example:
+#   DIAMOND: 100.0
+#   GOLD_INGOT: 30.0
+#   EMERALD: 80.0
+#
+# Value = sell price (double). If a material is not listed or set to 0,
+# MorphWorth will skip adding the worth lore line for that item.
+
 worth:
   STONE: 1.0
   COBBLESTONE: 0.5

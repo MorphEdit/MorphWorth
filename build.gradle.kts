@@ -3,7 +3,7 @@ plugins {
 }
 
 group = "net.morphserver"
-version = "1.0.0"
+version = "1.0.1"
 description = "Show item worth in item lore"
 
 java {
