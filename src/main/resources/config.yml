@@ -1,20 +1,31 @@
-# MorphWorth - main configuration
+# MorphWorth - Main Configuration
+#
+# This plugin displays item worth/value directly in item lore.
+# Worth calculation includes:
+#   - Base item price (from items: section in worth.yml)
+#   - Enchantment bonuses (from enchantments: section in worth.yml)
+#   - Stack quantity (automatically multiplied)
 #
 # update-interval-ticks:
-#   How often the plugin refreshes item lore.
-#   20 ticks = 1 second. Example: 40 = 2 seconds.
+#   How often the plugin refreshes item lore in player inventories.
+#   20 ticks = 1 second. Example: 40 = 2 seconds, 100 = 5 seconds.
+#   Lower values = more CPU usage but faster updates.
+#   Higher values = less lag but slower lore refresh.
 #
 # lore-format:
 #   The final line that will be added to the item's lore.
-#   %price% will be replaced with the formatted worth value.
+#   Placeholder: %price% = the calculated worth value.
+#   Supports color codes using & (e.g., &a = green, &c = red).
 #
 # round-decimals:
-#   How many decimal places to show for the price.
-#   0 = no decimals (integer only).
+#   How many decimal places to show for prices.
+#   0 = no decimals (integer only, e.g., "100")
+#   2 = two decimals (e.g., "100.50")
 #
 # lore-prefix:
-#   Optional prefix to identify the worth line in the lore.
-#   Used internally to detect and replace existing worth lines.
+#   The text prefix used to identify worth lines in lore.
+#   Used internally to detect and remove old worth lines when updating.
+#   Should match the beginning of your lore-format (without colors).
 
 update-interval-ticks: 40
 
